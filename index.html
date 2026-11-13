@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Aura Café &amp; Bar — breakfast and lunch in Nou Barris, Barcelona. Woman-owned, LGBTQ+ friendly."
+    />
+    <title>Aura Café &amp; Bar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <a class="site-header__logo" href="index.html" aria-label="Aura Café &amp; Bar — home">
+        <span class="site-header__logo-mark">Aura</span>
+        <span class="site-header__logo-sub">Café &amp; Bar</span>
+      </a>
+      <nav class="site-header__nav" aria-label="Primary">
+        <ul>
+          <li><a href="menu.html" data-i18n="nav.menu">Carta</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#location">Location</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" role="group" data-i18n-aria="lang.switchLabel" aria-label="Idioma de la carta">
+        <button type="button" class="lang-switch__btn is-active" data-lang="es" aria-pressed="true">ES</button>
+        <button type="button" class="lang-switch__btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </header>
+
+    <section class="hero" aria-label="Welcome">
+      <div class="hero__slideshow" aria-hidden="true">
+        <img
+          class="hero__slide is-active"
+          src="images/interior.png"
+          alt=""
+          width="1064"
+          height="594"
+          fetchpriority="high"
+        />
+        <img
+          class="hero__slide"
+          src="images/drinks.png"
+          alt=""
+          width="1200"
+          height="675"
+          loading="lazy"
+        />
+        <img
+          class="hero__slide"
+          src="images/breakfast-bowl.png"
+          alt=""
+          width="1200"
+          height="675"
+          loading="lazy"
+        />
+        <img
+          class="hero__slide"
+          src="images/pancakes.png"
+          alt=""
+          width="1200"
+          height="675"
+          loading="lazy"
+        />
+      </div>
+      <p class="visually-hidden" id="hero-visual-desc">
+        Photos of Aura Café &amp; Bar: dining room with counter, drinks, brunch bowls, and pancakes.
+      </p>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="hero__eyebrow">Café &amp; Bar · Nou Barris</p>
+        <h1 class="hero__title">Aura Café &amp; Bar</h1>
+        <p class="hero__tagline">Breakfast &amp; lunch · Dinner on site · Takeaway</p>
+      </div>
+    </section>
+
+    <main id="main-content">
+      <section id="menu" class="section scroll-reveal menu-teaser" aria-labelledby="menu-heading">
+        <p class="section__label" id="menu-label" data-i18n="menu.label">Carta</p>
+        <h2 class="section__title" id="menu-heading" data-i18n="menu.title">Nuestra carta</h2>
+        <div class="menu-teaser__body prose">
+          <p data-i18n="menu.teaser.lead">
+            Brunch, pancakes, tostadas, smoothies y café de especialidad — carta variada para desayunar y comer en
+            barrio.
+          </p>
+          <p data-i18n="menu.teaser.detail">Precios y alérgenos en la carta completa en español e inglés.</p>
+          <p class="menu-teaser__actions">
+            <a class="menu-teaser__cta" href="menu.html" data-i18n="menu.teaser.cta">Ver carta completa</a>
+          </p>
+        </div>
+      </section>
+
+      <section id="about" class="section section--alt scroll-reveal" aria-labelledby="about-heading">
+        <p class="section__label">About</p>
+        <h2 class="section__title" id="about-heading">Your neighborhood table</h2>
+
+        <div class="photo-strip" role="group" aria-label="Aura Café interior">
+          <figure class="photo-strip__main">
+            <img
+              loading="lazy"
+              src="images/interior.png"
+              alt="Cozy dining area at Aura Café &amp; Bar with natural light, greenery, and an inviting neighborhood feel"
+              width="1064"
+              height="594"
+            />
+            <figcaption>Mornings, lunch, and evenings in Nou Barris</figcaption>
+          </figure>
+          <figure class="photo-strip__main">
+            <img
+              loading="lazy"
+              src="images/interior-dining.png"
+              alt="Counter and dining area at Aura Café &amp; Bar"
+              width="376"
+              height="374"
+            />
+            <figcaption>Neighborhood counter service</figcaption>
+          </figure>
+        </div>
+
+        <div class="prose">
+          <p>
+            Aura Café &amp; Bar is a neighborhood spot in Nou Barris where mornings start with good coffee
+            and afternoons linger over simple, honest food. We serve breakfast and lunch daily, with dinner
+            on site and takeaway when you are on the go.
+          </p>
+          <p>
+            Our kitchen focuses on approachable plates, fresh pastries, and sandwiches made to order — the
+            kind of place where regulars are greeted by name and newcomers feel at home right away.
+          </p>
+          <p class="values">
+            <span class="values__line">LGBTQ+ friendly</span>
+            <span class="values__line">Woman-owned business</span>
+          </p>
+        </div>
+      </section>
+
+      <section id="reviews" class="section scroll-reveal" aria-labelledby="reviews-heading">
+        <p class="section__label">Reviews</p>
+        <h2 class="section__title" id="reviews-heading">What guests say</h2>
+
+        <div class="reviews-summary" aria-label="Average 4,9 out of 5 from 142 reviews">
+          <div class="reviews-summary__stars" aria-hidden="true">★★★★★</div>
+          <p class="reviews-summary__score">4,9</p>
+          <p class="reviews-summary__meta">142 reviews</p>
+        </div>
+
+        <p class="reviews-carousel-hint" id="reviews-carousel-hint">
+          Pasan solas de izquierda a derecha · toca para leer
+        </p>
+
+        <div
+          class="reviews-carousel"
+          role="region"
+          aria-roledescription="carousel"
+          aria-label="Guest reviews"
+          aria-describedby="reviews-carousel-hint"
+          tabindex="0"
+        >
+          <div class="review-list" data-reviews-track>
+          <article class="review-card">
+            <header class="review-card__head">
+              <span class="review-card__name">andreina cristancho</span>
+              <span class="review-card__stars" aria-label="5 out of 5 stars">
+                <span aria-hidden="true">★★★★★</span>
+              </span>
+            </header>
+            <blockquote class="review-card__quote" lang="es">
+              Me encantó! Comí con mi amiga, la pasamos súper rico, la comida deliciosa, el brunch super
+              completo y muy rico. La atención excelente, las chicas son un amor y muy atentas. Volveremos,
+              definitivamente nos encantó.
+            </blockquote>
+            <time class="review-card__date" datetime="2026-11-06">1 week ago</time>
+          </article>
+
+          <article class="review-card">
+            <header class="review-card__head">
+              <span class="review-card__name">Veronica Echeverri</span>
+              <span class="review-card__stars" aria-label="5 out of 5 stars">
+                <span aria-hidden="true">★★★★★</span>
+              </span>
+            </header>
+            <blockquote class="review-card__quote" lang="es">
+              Una experiencia maravillosa desde que cruzas la puerta. Personal amable y atento — Daniel en
+              sala, la barra encantadora. Ambiente cálido, decoración acogedora, aire acondicionado perfecto. La
+              comida, la calidad: menú disponible todos los días, humus en su punto, ensalada con serrano
+              riquísima. Si quieres un buen brunch, no dudes en venir a Aura. A partir de ahora, nuestro lugar
+              favorito.
+            </blockquote>
+            <time class="review-card__date" datetime="2026-09-13">2 months ago</time>
+          </article>
+
+          <article class="review-card">
+            <header class="review-card__head">
+              <span class="review-card__name">Astrid</span>
+              <span class="review-card__stars" aria-label="5 out of 5 stars">
+                <span aria-hidden="true">★★★★★</span>
+              </span>
+            </header>
+            <blockquote class="review-card__quote" lang="en">
+              Great value for money! This is the best brunch spot I've ever tried. Both the yoghurt and main
+              dishes are absolutely delicious, and the fruit is super fresh. Highly, highly recommend it.
+            </blockquote>
+            <time class="review-card__date" datetime="2026-10-13">1 month ago</time>
+          </article>
+
+          <article class="review-card">
+            <header class="review-card__head">
+              <span class="review-card__name">David</span>
+              <span class="review-card__stars" aria-label="5 out of 5 stars">
+                <span aria-hidden="true">★★★★★</span>
+              </span>
+            </header>
+            <blockquote class="review-card__quote" lang="es">
+              Buen sitio para desayunar rico, casero y de calidad. La carta es muy variada: tostadas con huevos
+              benedict, croissants o pancakes. La atención es muy buena y el local está decorado con gusto. Sin
+              duda una opción de barrio muy recomendable.
+            </blockquote>
+            <time class="review-card__date" datetime="2026-09-13">2 months ago</time>
+          </article>
+
+          <article class="review-card">
+            <header class="review-card__head">
+              <span class="review-card__name">Lu González</span>
+              <span class="review-card__stars" aria-label="5 out of 5 stars">
+                <span aria-hidden="true">★★★★★</span>
+              </span>
+            </header>
+            <blockquote class="review-card__quote" lang="es">
+              Es muy agradable el personal y atenta, una comida exquisita tanto dulce como salada. Una cosa muy
+              importante es que son pet friendly.
+            </blockquote>
+            <time class="review-card__date" datetime="2026-10-30">2 weeks ago</time>
+          </article>
+
+          <article class="review-card">
+            <header class="review-card__head">
+              <span class="review-card__name">Cata Sánchez</span>
+              <span class="review-card__stars" aria-label="5 out of 5 stars">
+                <span aria-hidden="true">★★★★★</span>
+              </span>
+            </header>
+            <blockquote class="review-card__quote" lang="es">
+              Ya es la segunda vez que vamos a este brunch y es de mis favoritos en Barcelona. La atención 10/10,
+              hay muy buen ambiente y se nota que todo lo sirven con cariño. Recomiendo los pancakes de frutos
+              rojos y el matcha fresa. Sin duda volveré.
+            </blockquote>
+            <time class="review-card__date" datetime="2026-06-13">5 months ago</time>
+          </article>
+
+          <article class="review-card">
+            <header class="review-card__head">
+              <span class="review-card__name">Scid</span>
+              <span class="review-card__stars" aria-label="4 out of 5 stars">
+                <span aria-hidden="true">★★★★☆</span>
+              </span>
+            </header>
+            <blockquote class="review-card__quote" lang="de">
+              Sehr feiner Avocado-Toast mit Tomaten und Hummus. Plus grüner Salat als Beilage — lecker.
+              Cappuccino mit Hafermilch; die Schablone mit Schokolade war nicht so meins.
+            </blockquote>
+            <time class="review-card__date" datetime="2026-04-13">7 months ago</time>
+          </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="location" class="section section--alt scroll-reveal" aria-labelledby="location-heading">
+        <p class="section__label">Location</p>
+        <h2 class="section__title" id="location-heading">Visit us</h2>
+
+        <div class="location-details">
+          <dl class="location-dl">
+            <dt>Address</dt>
+            <dd>
+              Carrer de Joaquim Valls, 63<br />
+              Nou Barris, 08016 Barcelona, Spain
+            </dd>
+            <dt>Phone</dt>
+            <dd><a href="tel:+34624975997">+34 624 97 59 97</a></dd>
+            <dt>Hours</dt>
+            <dd>Open daily; closes <strong>9:00&nbsp;PM</strong> (confirm with staff for holidays).</dd>
+            <dt>Price</dt>
+            <dd>Most breakfast and lunch items <strong>1–10&nbsp;€</strong> per person.</dd>
+          </dl>
+
+          <p class="values values--footer">
+            <span class="values__line">LGBTQ+ friendly</span>
+            <span class="values__line">Woman-owned business</span>
+          </p>
+        </div>
+
+        <div class="map-wrap">
+          <iframe
+            title="Map: Aura Café &amp; Bar, Carrer de Joaquim Valls 63, Barcelona"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://maps.google.com/maps?q=Carrer+de+Joaquim+Valls,+63,+08016+Barcelona,+Spain&amp;hl=en&amp;z=16&amp;output=embed"
+          ></iframe>
+        </div>
+        <p class="map-alt">
+          Also on
+          <a
+            href="https://www.openstreetmap.org/search?query=Carrer%20de%20Joaquim%20Valls%2063%208016%20Barcelona"
+            target="_blank"
+            rel="noopener noreferrer"
+            >OpenStreetMap</a
+          >
+          · Plus code: <strong>C5VJ+97 Barcelona</strong>
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="site-footer__brand">Aura Café &amp; Bar</p>
+      <p class="site-footer__meta">
+        Carrer de Joaquim Valls, 63 · Barcelona ·
+        <a href="tel:+34624975997">+34 624 97 59 97</a> · Open daily until 9&nbsp;PM
+      </p>
+      <p class="site-footer__values">LGBTQ+ friendly · Woman-owned</p>
+      <p class="site-footer__copy">© Aura Café &amp; Bar</p>
+    </footer>
+    <script src="hero.js" defer></script>
+    <script src="menu-i18n.js" defer></script>
+    <script src="reviews.js" defer></script>
+  </body>
+</html>

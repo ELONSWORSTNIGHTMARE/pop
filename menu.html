@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Full menu — Aura Café &amp; Bar, breakfast and lunch in Nou Barris, Barcelona. Spanish and English."
+    />
+    <title>Carta · Aura Café &amp; Bar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page-menu">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <a class="site-header__logo" href="index.html" aria-label="Aura Café &amp; Bar — home">
+        <span class="site-header__logo-mark">Aura</span>
+        <span class="site-header__logo-sub">Café &amp; Bar</span>
+      </a>
+      <nav class="site-header__nav" aria-label="Primary">
+        <ul>
+          <li><a href="menu.html" aria-current="page" data-i18n="nav.menu">Carta</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#reviews">Reviews</a></li>
+          <li><a href="index.html#location">Location</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" role="group" data-i18n-aria="lang.switchLabel" aria-label="Idioma de la carta">
+        <button type="button" class="lang-switch__btn is-active" data-lang="es" aria-pressed="true">ES</button>
+        <button type="button" class="lang-switch__btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </header>
+
+    <main id="main-content" class="menu-page">
+      <header class="menu-page__intro section section--compact">
+        <p class="section__label" data-i18n="menu.label">Carta</p>
+        <h1 class="section__title menu-page__title" data-i18n="menu.title">Nuestra carta</h1>
+        <div
+          class="menu-format"
+          role="tablist"
+          data-i18n-aria="menu.format.label"
+          aria-label="Formato de la carta"
+        >
+          <button
+            type="button"
+            class="menu-format__btn is-active"
+            role="tab"
+            id="menu-tab-text"
+            aria-selected="true"
+            aria-controls="menu-panel-text"
+            data-menu-format="text"
+          >
+            <span data-i18n="menu.format.text">Texto</span>
+          </button>
+          <button
+            type="button"
+            class="menu-format__btn"
+            role="tab"
+            id="menu-tab-images"
+            aria-selected="false"
+            aria-controls="menu-panel-images"
+            data-menu-format="images"
+            tabindex="-1"
+          >
+            <span data-i18n="menu.format.images">Imágenes</span>
+          </button>
+        </div>
+      </header>
+
+      <section
+        id="menu-panel-text"
+        class="section section--compact menu-page__carta menu-panel is-visible"
+        role="tabpanel"
+        aria-labelledby="menu-tab-text menu-text-heading"
+      >
+        <h2 class="visually-hidden" id="menu-text-heading">Menu items</h2>
+        <div id="menu-root" class="menu-carta" aria-live="polite"></div>
+      </section>
+
+      <section
+        id="menu-panel-images"
+        class="section menu-scan menu-panel"
+        role="tabpanel"
+        aria-labelledby="menu-tab-images"
+        hidden
+      >
+        <p class="section__label" data-i18n="menu.format.imagesLabel">Fotos</p>
+        <h2 class="section__title" id="menu-scan-heading" data-i18n="menu.scan.title">Carta impresa</h2>
+        <p class="menu-scan__hint" data-i18n="menu.scan.hint">Toca una imagen para verla a tamaño completo</p>
+
+        <div class="menu-scan__stack">
+          <figure class="menu-scan__card">
+            <button
+              type="button"
+              class="menu-scan__open"
+              data-menu-scan-open
+              data-full-src="images/menu/scan-brunch-smoothies.png"
+              data-i18n-caption="menu.scan.brunch"
+              data-full-caption="Brunch y smoothies"
+            >
+              <img
+                src="images/menu/scan-brunch-smoothies.png"
+                alt=""
+                width="1024"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
+            <figcaption data-i18n="menu.scan.brunch">Brunch y smoothies</figcaption>
+          </figure>
+
+          <figure class="menu-scan__card">
+            <button
+              type="button"
+              class="menu-scan__open"
+              data-menu-scan-open
+              data-full-src="images/menu/scan-pancakes-cocktails.png"
+              data-i18n-caption="menu.scan.pancakes"
+              data-full-caption="Pancakes y cócteles"
+            >
+              <img
+                src="images/menu/scan-pancakes-cocktails.png"
+                alt=""
+                width="1024"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
+            <figcaption data-i18n="menu.scan.pancakes">Pancakes y cócteles</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="menu-lightbox" id="menu-lightbox" aria-label="Menu photo">
+      <form method="dialog" class="menu-lightbox__toolbar">
+        <button type="submit" class="menu-lightbox__close" data-lightbox-close data-i18n="menu.lightbox.close">
+          Cerrar
+        </button>
+      </form>
+      <div class="menu-lightbox__stage">
+        <img class="menu-lightbox__img" alt="" decoding="async" />
+      </div>
+    </dialog>
+
+    <footer class="site-footer">
+      <p class="site-footer__brand">Aura Café &amp; Bar</p>
+      <p class="site-footer__meta">
+        Carrer de Joaquim Valls, 63 · Barcelona ·
+        <a href="tel:+34624975997">+34 624 97 59 97</a> · Open daily until 9&nbsp;PM
+      </p>
+      <p class="site-footer__values">LGBTQ+ friendly · Woman-owned</p>
+      <p class="site-footer__copy">© Aura Café &amp; Bar</p>
+    </footer>
+    <script src="menu-i18n.js" defer></script>
+  </body>
+</html>
